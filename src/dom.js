@@ -42,6 +42,7 @@ function refreshView(project){
     
     for (let i = 0; i < project.items.length; i++) {
         let item = document.createElement("div");
+        item.id = "#test";
         item.classList.add("project-item");
         item.textContent = project.items[i].title;
         projectItemContainer.appendChild(item);
